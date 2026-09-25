@@ -1,4 +1,4 @@
-# ./factory--force / execyul_v2.py - ORIGINAL UNTOUCHED CORE - YYZ06
+# ./factory--force / execyul_v2.py - ORIGINAL UNTOUCHED CORE
 import json, time, subprocess
 from pathlib import Path
 HOME = Path(__file__).parent
@@ -10,15 +10,12 @@ def root_learn(note):
     data.append({"ts":time.time(),"note":note,"id":len(data)})
     MANIFEST.parent.mkdir(exist_ok=True)
     MANIFEST.write_text(json.dumps(data,indent=2))
-    print(f"ROOT +1 particle // total {len(data)} // MOSS he/him")
-def void_wrap(cmd):
-    print(f"VOID-EXECYUL wrapping: {cmd} -> {LITTLE_ONES}")
+    print(f"ROOT +1 particle // total {len(data)}")
 if __name__ == "__main__":
     while True:
         try:
             c=input("execyul> ")
             if c in ("exit","quit"): break
             if c.startswith("learn "): root_learn(c[6:])
-            else: void_wrap(c)
-        except KeyboardInterrupt:
-            break
+            else: print(f"VOID wrapping: {c} -> {LITTLE_ONES}")
+        except: break
