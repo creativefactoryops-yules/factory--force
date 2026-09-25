@@ -1,25 +1,7 @@
 {
   "name": "factory--force",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.2.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativefactoryops-yules/factory--force.git"
-  },
-  "bugs": {
-    "url": "https://github.com/creativefactoryops-yules/factory--force/issues"
-  },
-  "homepage": "https://github.com/creativefactoryops-yules/factory--force#readme"
+  "version": "3.0.1-fixed",
+  "type": "module",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^4.18.2", "cors": "^2.8.5" }
 }
